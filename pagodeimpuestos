@@ -1,0 +1,30 @@
+// pagodeimpuesto.cpp : Defines the entry point for the console application.
+//Autor: Juan Sebastian Suarez 
+//Fecha: 29/9/15
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main(){
+	int n;
+	float c, p;
+	cout<< "Ingrese el numero de empleados"<< endl;
+	cin>> n;
+	c=0;
+	for(int i=1; i<=n; i++){
+		cout<<"Ingrese el sueldo de la persona "<<i<<endl;
+		cin>>p;
+		if(p>=2*1656)
+		{	c=c+p*0.13;
+		cout<<"El impuesto a pagar " << i << " es: " << p*0.13 <<endl<<endl;
+		}
+	
+		else 
+		cout<<"El impuesto a pagar es" << i << "Bs. 0" <<endl<<endl;
+	
+	}
+	cout<<"El impuesto total a pagar es: "<< c << "Bs. ";
+	getch();
+}
