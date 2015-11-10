@@ -26,3 +26,4 @@ void main()
   c++;}
  cout<<"el valor de la sumatoria es"<<s;
   getch();
+}
