@@ -1,0 +1,41 @@
+// examen.cpp : Defines the entry point for the console application.
+// juan sebastian suarez.
+
+#include "stdafx.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+using namespace std;
+
+float fact(int z);
+float potencia(float x, int exp);
+
+void main()
+{float S, POT, X;
+int N, FACT, i;
+S=2;
+i=1;
+FACT=1;
+cout<<"Ingrese el valor de N:"<<endl;
+cin>>N;
+cout<<"Ingrese el valor de X:"<<endl;
+cin>>X;
+for (int i=1;i<=N;i++)
+  S=S+(potencia(X,i)/fact(i));
+cout<<"EL valor de la sumatoria es:"<<S<<endl;
+getch ();
+}
+
+float fact(int z)
+{float acum;
+acum=1;
+for (int i=1; i<=z; i++)
+	acum=acum*i;
+return acum;
+}
+
+float potencia(float x, int exp)
+{float base, exponente;
+ return pow(x, exp);
+}
+
